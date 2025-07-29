@@ -116,3 +116,7 @@ done
 - **Configuration Changes**:
   - Don't do edits to any nvim config files until user explicitly confirmed that he wants to make these changes
   - When there is an option to make some changes or even necessity in such changes - explain this to user clearly with some context and justification and wait for confirmation
+
+### Configuration Philosophy
+
+- Don't add any unnecessary config, we want to keep out config lean and minimalistic and only override defaults where really necessary.
