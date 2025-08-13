@@ -9,9 +9,19 @@ vim.keymap.set("n", "<leader>y", function()
   vim.notify("Copied: " .. filename)
 end, { desc = "Copy filename to clipboard" })
 
--- Copy full path
+-- Copy relative path
 vim.keymap.set("n", "<leader>Y", function()
-  local filepath = vim.fn.expand("%:p")
+  local filepath = vim.fn.expand("%")
   vim.fn.setreg("+", filepath)
   vim.notify("Copied: " .. filepath)
-end, { desc = "Copy filepath to clipboard" })
+end, { desc = "Copy relative path to clipboard" })
+
+-- Alt-arrow word movement in insert mode
+vim.keymap.set("i", "<M-Left>", "<C-o>b", { desc = "Move word backward in insert mode" })
+vim.keymap.set("i", "<M-Right>", "<C-o>w", { desc = "Move word forward in insert mode" })
+-- Alternative mappings if alt-arrows don't work on macOS
+vim.keymap.set("i", "<A-Left>", "<C-o>b", { desc = "Move word backward in insert mode (alt)" })
+vim.keymap.set("i", "<A-Right>", "<C-o>w", { desc = "Move word forward in insert mode (alt)" })
+
+-- Diffview main branch comparison
+vim.keymap.set("n", "<leader>gm", "<cmd>DiffviewOpen main<cr>", { desc = "Diffview against main branch" })
