@@ -134,166 +134,170 @@ return {
     opts = function()
       local dap = require("dap")
 
-      -- BFF Service (Port 8000 -> Debug 5678)
+      -- BFF Service (Port 8000 -> Debug 9991)
       table.insert(dap.configurations.python, {
         type = "python",
         request = "attach",
         name = "BFF Service",
         connect = {
           host = "localhost",
-          port = 5678,
+          port = 9991,
         },
         pathMappings = {
           {
-            localRoot = vim.fn.getcwd() .. "/conversations-monitoring-system/bff_service",
-            remoteRoot = "/conversations-monitoring-system/bff_service",
+            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/bff_service",
+            remoteRoot = "/avon/conversations-monitoring-system/bff_service",
           },
           {
-            localRoot = vim.fn.getcwd() .. "/avoncore/python",
-            remoteRoot = "/avoncore",
+            localRoot = "/Users/yuri/avon-ai/avoncore",
+            remoteRoot = "/avon/avoncore",
           },
         },
       })
 
-      -- Database Service (Port 8002 -> Debug 5679)
+      -- Database Service (Port 8002 -> Debug 9992)
       table.insert(dap.configurations.python, {
         type = "python",
         request = "attach",
         name = "Database Service",
         connect = {
           host = "localhost",
-          port = 5679,
+          port = 9992,
         },
         pathMappings = {
           {
-            localRoot = vim.fn.getcwd() .. "/conversations-monitoring-system/database_service",
-            remoteRoot = "/conversations-monitoring-system/database_service",
+            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/database_service",
+            remoteRoot = "/avon/conversations-monitoring-system/database_service",
           },
           {
-            localRoot = vim.fn.getcwd() .. "/avoncore/python",
-            remoteRoot = "/avoncore",
+            localRoot = "/Users/yuri/avon-ai/avoncore",
+            remoteRoot = "/avon/avoncore",
           },
         },
       })
 
-      -- Registry Service (Port 8001 -> Debug 5680)
-      table.insert(dap.configurations.python, {
-        type = "python",
-        request = "attach",
-        name = "Registry Service",
-        connect = {
-          host = "localhost",
-          port = 5680,
-        },
-        pathMappings = {
-          {
-            localRoot = vim.fn.getcwd() .. "/conversations-monitoring-system/registry",
-            remoteRoot = "/conversations-monitoring-system/registry",
-          },
-          {
-            localRoot = vim.fn.getcwd() .. "/avoncore/python",
-            remoteRoot = "/avoncore",
-          },
-        },
-      })
-
-      -- Test Runner Service (Port 8006 -> Debug 5681)
+      -- Test Runner Service (Port 8006 -> Debug 9993)
       table.insert(dap.configurations.python, {
         type = "python",
         request = "attach",
         name = "Test Runner Service",
         connect = {
           host = "localhost",
-          port = 5681,
+          port = 9993,
         },
         pathMappings = {
           {
-            localRoot = vim.fn.getcwd() .. "/conversations-monitoring-system/test_runner_service",
-            remoteRoot = "/conversations-monitoring-system/test_runner_service",
+            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/test_runner_service",
+            remoteRoot = "/avon/conversations-monitoring-system/test_runner_service",
           },
           {
-            localRoot = vim.fn.getcwd() .. "/avoncore/python",
-            remoteRoot = "/avoncore",
+            localRoot = "/Users/yuri/avon-ai/avoncore",
+            remoteRoot = "/avon/avoncore",
           },
         },
       })
 
-      -- Validation Job Service (Port 8003 -> Debug 5682)
+      -- Registry Service (Port 8001 -> Debug 9994)
+      table.insert(dap.configurations.python, {
+        type = "python",
+        request = "attach",
+        name = "Registry Service",
+        connect = {
+          host = "localhost",
+          port = 9994,
+        },
+        pathMappings = {
+          {
+            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/registry",
+            remoteRoot = "/avon/conversations-monitoring-system/registry",
+          },
+          {
+            localRoot = "/Users/yuri/avon-ai/avoncore",
+            remoteRoot = "/avon/avoncore",
+          },
+        },
+      })
+
+      -- Validation Job Service (Port 8003 -> Debug 9995)
       table.insert(dap.configurations.python, {
         type = "python",
         request = "attach",
         name = "Validation Job Service",
         connect = {
           host = "localhost",
-          port = 5682,
+          port = 9995,
         },
         pathMappings = {
           {
-            localRoot = vim.fn.getcwd() .. "/conversations-monitoring-system/validation_job",
-            remoteRoot = "/conversations-monitoring-system/validation_job",
+            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/validation_job",
+            remoteRoot = "/avon/conversations-monitoring-system/validation_job",
           },
           {
-            localRoot = vim.fn.getcwd() .. "/avoncore/python",
-            remoteRoot = "/avoncore",
+            localRoot = "/Users/yuri/avon-ai/avoncore",
+            remoteRoot = "/avon/avoncore",
           },
         },
       })
 
-      -- Data Ingestion Service (Port 8005 -> Debug 5683)
+      -- Data Ingestion Service (Port 8005 -> Debug 9996)
       table.insert(dap.configurations.python, {
         type = "python",
         request = "attach",
         name = "Data Ingestion Service",
         connect = {
           host = "localhost",
-          port = 5683,
+          port = 9996,
         },
         pathMappings = {
           {
-            localRoot = vim.fn.getcwd() .. "/conversations-monitoring-system/data_ingestion",
-            remoteRoot = "/conversations-monitoring-system/data_ingestion",
+            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/data_ingestion",
+            remoteRoot = "/avon/conversations-monitoring-system/data_ingestion",
           },
           {
-            localRoot = vim.fn.getcwd() .. "/avoncore/python",
-            remoteRoot = "/avoncore",
+            localRoot = "/Users/yuri/avon-ai/avoncore",
+            remoteRoot = "/avon/avoncore",
           },
         },
       })
 
-      -- KB Service (Port 8004 -> Debug 5684)
+      -- KB Service (Port 8004 -> Debug 9997)
       table.insert(dap.configurations.python, {
         type = "python",
         request = "attach",
         name = "KB Service",
         connect = {
           host = "localhost",
-          port = 5684,
+          port = 9997,
         },
         pathMappings = {
           {
-            localRoot = vim.fn.getcwd() .. "/conversations-monitoring-system/kb_service",
-            remoteRoot = "/conversations-monitoring-system/kb_service",
+            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/kb_service",
+            remoteRoot = "/avon/conversations-monitoring-system/kb_service",
           },
           {
-            localRoot = vim.fn.getcwd() .. "/avoncore/python",
-            remoteRoot = "/avoncore",
+            localRoot = "/Users/yuri/avon-ai/avoncore",
+            remoteRoot = "/avon/avoncore",
           },
         },
       })
 
-      -- Enterprise AI Agents (Port 8020 -> Debug 5685)
+      -- Enterprise AI Agents (Port 8020 -> Debug 5678)
       table.insert(dap.configurations.python, {
         type = "python",
         request = "attach",
         name = "Enterprise AI Agents",
         connect = {
           host = "localhost",
-          port = 5685,
+          port = 5678,
         },
         pathMappings = {
           {
-            localRoot = vim.fn.getcwd() .. "/enterprise-ai-agents",
-            remoteRoot = "/enterprise-ai-agents",
+            localRoot = "/Users/yuri/avon-ai/enterprise-ai-agents",
+            remoteRoot = "/avon/enterprise-ai-agents",
+          },
+          {
+            localRoot = "/Users/yuri/avon-ai/avoncore",
+            remoteRoot = "/avon/avoncore",
           },
         },
       })
