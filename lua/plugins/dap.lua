@@ -145,11 +145,11 @@ return {
         },
         pathMappings = {
           {
-            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/bff_service",
+            localRoot = "/Users/yuri/avon-ai/singularity/conversations-monitoring-system/bff_service",
             remoteRoot = "/avon/conversations-monitoring-system/bff_service",
           },
           {
-            localRoot = "/Users/yuri/avon-ai/avoncore",
+            localRoot = "/Users/yuri/avon-ai/singularity/avoncore",
             remoteRoot = "/avon/avoncore",
           },
         },
@@ -166,11 +166,11 @@ return {
         },
         pathMappings = {
           {
-            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/database_service",
+            localRoot = "/Users/yuri/avon-ai/singularity/conversations-monitoring-system/database_service",
             remoteRoot = "/avon/conversations-monitoring-system/database_service",
           },
           {
-            localRoot = "/Users/yuri/avon-ai/avoncore",
+            localRoot = "/Users/yuri/avon-ai/singularity/avoncore",
             remoteRoot = "/avon/avoncore",
           },
         },
@@ -187,11 +187,11 @@ return {
         },
         pathMappings = {
           {
-            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/test_runner_service",
+            localRoot = "/Users/yuri/avon-ai/singularity/conversations-monitoring-system/test_runner_service",
             remoteRoot = "/avon/conversations-monitoring-system/test_runner_service",
           },
           {
-            localRoot = "/Users/yuri/avon-ai/avoncore",
+            localRoot = "/Users/yuri/avon-ai/singularity/avoncore",
             remoteRoot = "/avon/avoncore",
           },
         },
@@ -208,11 +208,11 @@ return {
         },
         pathMappings = {
           {
-            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/registry",
+            localRoot = "/Users/yuri/avon-ai/singularity/conversations-monitoring-system/registry",
             remoteRoot = "/avon/conversations-monitoring-system/registry",
           },
           {
-            localRoot = "/Users/yuri/avon-ai/avoncore",
+            localRoot = "/Users/yuri/avon-ai/singularity/avoncore",
             remoteRoot = "/avon/avoncore",
           },
         },
@@ -229,11 +229,11 @@ return {
         },
         pathMappings = {
           {
-            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/validation_job",
+            localRoot = "/Users/yuri/avon-ai/singularity/conversations-monitoring-system/validation_job",
             remoteRoot = "/avon/conversations-monitoring-system/validation_job",
           },
           {
-            localRoot = "/Users/yuri/avon-ai/avoncore",
+            localRoot = "/Users/yuri/avon-ai/singularity/avoncore",
             remoteRoot = "/avon/avoncore",
           },
         },
@@ -250,11 +250,11 @@ return {
         },
         pathMappings = {
           {
-            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/data_ingestion",
+            localRoot = "/Users/yuri/avon-ai/singularity/conversations-monitoring-system/data_ingestion",
             remoteRoot = "/avon/conversations-monitoring-system/data_ingestion",
           },
           {
-            localRoot = "/Users/yuri/avon-ai/avoncore",
+            localRoot = "/Users/yuri/avon-ai/singularity/avoncore",
             remoteRoot = "/avon/avoncore",
           },
         },
@@ -271,11 +271,11 @@ return {
         },
         pathMappings = {
           {
-            localRoot = "/Users/yuri/avon-ai/conversations-monitoring-system/kb_service",
+            localRoot = "/Users/yuri/avon-ai/singularity/conversations-monitoring-system/kb_service",
             remoteRoot = "/avon/conversations-monitoring-system/kb_service",
           },
           {
-            localRoot = "/Users/yuri/avon-ai/avoncore",
+            localRoot = "/Users/yuri/avon-ai/singularity/avoncore",
             remoteRoot = "/avon/avoncore",
           },
         },
@@ -292,16 +292,15 @@ return {
         },
         pathMappings = {
           {
-            localRoot = "/Users/yuri/avon-ai/enterprise-ai-agents",
+            localRoot = "/Users/yuri/avon-ai/singularity/enterprise-ai-agents",
             remoteRoot = "/avon/enterprise-ai-agents",
           },
           {
-            localRoot = "/Users/yuri/avon-ai/avoncore",
+            localRoot = "/Users/yuri/avon-ai/singularity/avoncore",
             remoteRoot = "/avon/avoncore",
           },
         },
       })
-
     end,
   },
   {
