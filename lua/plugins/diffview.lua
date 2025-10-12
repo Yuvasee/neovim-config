@@ -3,7 +3,16 @@ return {
   cmd = { "DiffviewOpen", "DiffviewFileHistory" },
   keys = {
     { "<leader>ga", "<cmd>DiffviewOpen<cr>", desc = "Open Diffview", mode = { "n", "v" } },
-    { "<leader>gc", "<cmd>DiffviewOpen HEAD~1<cr>", desc = "Diffview vs 1 commit back", mode = { "n", "v" } },
+    {
+      "<leader>gc",
+      function()
+        local count = vim.v.count1
+        vim.cmd("DiffviewOpen HEAD~" .. count)
+      end,
+      desc = "Diffview vs N commits back",
+      mode = { "n", "v" },
+    },
+    { "<leader>gm", "<cmd>DiffviewOpen origin/main<cr>", desc = "Diffview vs main branch", mode = { "n", "v" } },
     { "<leader>gA", "<cmd>DiffviewClose<cr>", desc = "Close Diffview" },
   },
   opts = {
