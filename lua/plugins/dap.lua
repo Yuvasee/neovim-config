@@ -68,6 +68,13 @@ return {
         desc = "Continue",
       },
       {
+        "<leader>dd",
+        function()
+          require("dap").disconnect()
+        end,
+        desc = "Disconnect",
+      },
+      {
         "<leader>dC",
         function()
           require("dap").run_to_cursor()
@@ -133,6 +140,7 @@ return {
     },
     opts = function()
       local dap = require("dap")
+      dap.configurations.python = dap.configurations.python or {}
 
       -- BFF Service (Port 8000 -> Debug 9991)
       table.insert(dap.configurations.python, {

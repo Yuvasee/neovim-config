@@ -1,6 +1,10 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    scope = { enabled = false },
+    indent = {
+      scope = { enabled = false },
+    },
     picker = {
       sources = {
         explorer = {

@@ -1,7 +1,20 @@
+-- Store the initial working directory on startup
+local initial_cwd = vim.fn.getcwd()
+
 return {
   {
     "nvim-telescope/telescope.nvim",
     keys = {
+      -- Override live_grep to always search from initial root
+      {
+        "<leader>sg",
+        function()
+          require("telescope.builtin").live_grep({
+            cwd = initial_cwd,
+          })
+        end,
+        desc = "Grep (root dir)",
+      },
       -- Override the default <leader>ff to include hidden files
       {
         "<leader>ff",

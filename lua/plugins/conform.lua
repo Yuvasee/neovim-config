@@ -23,6 +23,7 @@ return {
       ["markdown.mdx"] = { "prettier" },
       graphql = { "prettier" },
       handlebars = { "prettier" },
+      http = {},
     },
   },
 }
