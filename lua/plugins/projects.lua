@@ -4,17 +4,17 @@ return {
     "ahmedkhalf/project.nvim",
     opts = {
       -- Manual mode allows you to manually add projects
-      manual_mode = false,
+      manual_mode = true,
       -- Detection methods: "lsp" or "pattern"
-      detection_methods = { "lsp", "pattern" },
+      detection_methods = { "pattern" },
       -- Patterns to detect project root
       patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json", "go.mod", "Cargo.toml" },
       -- Show hidden files in telescope
       show_hidden = false,
       -- Don't change directory when opening project
-      silent_chdir = true,
-      -- What scope to change the directory
-      scope_chdir = "global",
+      silent_chdir = false,
+      -- What scope to change the directory - "none" disables auto chdir
+      scope_chdir = "none",
       -- Path where project.nvim will store the project history
       datapath = vim.fn.stdpath("data"),
     },

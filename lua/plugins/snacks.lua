@@ -4,6 +4,10 @@ return {
     picker = {
       sources = {
         explorer = {
+          hidden = true,
+          ignored = true,
+          follow_file = false,
+          auto_close = false,
           layout = {
             width = 40,
             min_width = 40,
@@ -12,6 +16,9 @@ return {
           },
         },
       },
+    },
+    explorer = {
+      replace_netrw = true,
     },
   },
 }
